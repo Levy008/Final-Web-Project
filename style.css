@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.hideMobileMenu {
+    visibility: hidden;
+}
+
 a {
     text-decoration: none;
     transition: .5s;
@@ -202,7 +206,7 @@ section {
     .sectionCategories {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 15px;
     }
 
     .sectionCategories .catBoxitem {
@@ -218,10 +222,10 @@ section {
 .catBox {
     border: hidden;
     box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.5);
-    padding: 15px;
-    width: 400px;
+    padding: 10px;
+    width: 45%;
     font-size: 15px;
-    height: 120px;
+    min-height: 100px;
     transition: 0.6s;
 }
 
@@ -311,3 +315,226 @@ footer form button {
 }
 
 /* footer section */
+
+/* media queries for small laptop mode */
+
+@media only screen and (min-width:1024px) and (max-width: 1439px) {
+    section .sectionCategories {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        gap: 15px;
+    }
+
+    .headerContainer {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .footercontainer {
+        width: 70vw;
+        margin: auto;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* media queries for small laptop mode */
+
+/* media queries for tablet mode */
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    section .sectionCategories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        width: 100vw;
+        gap: 15px;
+    }
+
+    .headerContainer {
+        width: 100vw;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        padding: 10px 20px;
+        height: 100%;
+    }
+
+    .footercontainer {
+        width: 100vw;
+        padding: 20px 30px;
+        margin: auto;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* media queries for tablet mode */
+
+/* media queries for small screen */
+
+@media only screen and (min-width:375px) and (max-width:767px) {
+
+    .hideMobileMenu {
+        visibility: visible;
+    }
+
+    header {
+        width: 100vw;
+        background: none;
+        background-color: rgb(51, 51, 51);
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .headerContainer {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100vw;
+    }
+
+    .bxs-search {
+        filter: drop-shadow(1px 3px 5px rgb(16, 16, 16));
+        transform: scale(2);
+        position: absolute;
+        left: 30px;
+        top: 28px;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bx-menu {
+        filter: drop-shadow(1px 3px 5px rgb(24, 24, 24));
+        transform: scale(2.2);
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+
+    .bx-x {
+        filter: drop-shadow(1px 3px 5px rgb(20, 20, 20));
+        transform: scale(2.2);
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+
+    main {
+        height: auto;
+    }
+
+
+    section .sectionCategories {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+
+    aside {
+        display: none;
+    }
+
+    .sectionCategories {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .catBox {
+        width: 100%;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 100%;
+        gap: 15px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footercontainer {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .inputFill {
+            width: 100%;
+        }
+    }
+
+    footer form button {
+        background-color: rgb(197, 144, 29);
+        padding: 10px;
+        font-size: 14px;
+        width: 150px;
+        border-radius: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footerLinksContainer {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+}
+
+/* media queries for small screen */

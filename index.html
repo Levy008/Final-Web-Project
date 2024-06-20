@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final-Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header>
         <div class="headerContainer">
             <div class="logo"></div>
-            <nav>
+            <nav class="hide">
                 <ul>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Developers</a></li>
@@ -20,7 +21,7 @@
                     <li><a href="#">Support</a></li>
                 </ul>
             </nav>
-            <div class="searchBar">
+            <div class="searchBar hide">
                 <select name="SearchCategory" id="searchBox">
                     <option value="">All products</option>
                     <option value="First">First</option>
@@ -30,6 +31,11 @@
                 </select>
                 <input type="text" id="search">
                 <a id="searchButton" href=""><box-icon name='search'></box-icon></a>
+            </div>
+            <div class="mobileSearch hideMobileMenu"><a href=""><i class='bx bxs-search' style='color:#ffffff'></i></a>
+            </div>
+            <div class="menuOpen hideMobileMenu"><a href=""><i class='bx bx-menu' style='color:#ffffff'></i></a></div>
+            <div class="menuClose hide hideMobileMenu"><a href=""><i class='bx bx-x' style='color:#ffffff'></i></a>
             </div>
         </div>
     </header>
