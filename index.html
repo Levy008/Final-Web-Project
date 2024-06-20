@@ -10,123 +10,142 @@
 
 <body>
     <header>
-        <div class="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Developers</a></li>
-                <li><a href="#">Developer Blog</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
-        <div class="searchBar">
-            <select name="SearchCategory" id="searchBox">
-                <option value="">All products</option>
-                <option value="First">First</option>
-                <option value="Second">Second</option>
-                <option value="Third">Third</option>
-                <option value="Fourth">Fourth</option>
-            </select>
-            <input type="text" id="search">
-            <button id="searchButton"><box-icon name='search'></box-icon></button>
+        <div class="headerContainer">
+            <div class="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Developer Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+            <div class="searchBar">
+                <select name="SearchCategory" id="searchBox">
+                    <option value="">All products</option>
+                    <option value="First">First</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                    <option value="Fourth">Fourth</option>
+                </select>
+                <input type="text" id="search">
+                <a id="searchButton" href=""><box-icon name='search'></box-icon></a>
+            </div>
         </div>
     </header>
     <main>
-        <div class="mainNavigation">
-            <a href="">Home</a>
-            <box-icon name='right-arrow' type='solid'></box-icon>
-            <h5>Getting Started</h5>
-        </div>
-        <aside>
-            <a href="">Getting Started</a>
-            <box-icon name='right-arrow' type='solid'></box-icon>
-            <ul>
-                <li><a href="">User Guide</a></li>
-                <li><a href="">Developer</a></li>
-                <li><a href="">Realese Notes</a></li>
-            </ul>
-            <a href="">Personalization</a>
-            <box-icon name='right-arrow' type='solid'></box-icon>
-        </aside>
-        <section>
-            <h1>Getting Started</h1>
-            <div class="sectionCategories">
-                <div class="category1 catBox">
-                    <a href="">
-                        <box-icon name='folder-open'></box-icon>
-                        <div>
-                            <h3>User Guides</h3>
-                            <p>We're a New category, with lots of useful information</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="category2 catBox">
-                    <a href="">
-                        <box-icon name='code-block'></box-icon>
-                        <div>
-                            <h3>Developer</h3>
-                            <p>We're a New category, with lots of useful information</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="category3 catBox">
-                    <a href="">
-                        <box-icon name='megaphone' type='solid'></box-icon>
-                        <div>
-                            <h3>Realese Notes</h3>
-                            <p>We're a New category, with lots of useful information</p>
-                        </div>
-                    </a>
-                </div>
+        <div class="mainContainer">
+            <div class="mainNavigation">
+                <a href="">Home</a>
+                <box-icon class="boxicons" name='right-arrow' type='solid'></box-icon>
+                <h5>Getting Started</h5>
             </div>
-        </section>
+            <aside>
+                <div class="asideLinks">
+                    <h5><a class="activeSelection" href="">Getting Started</a></h5>
+                    <box-icon class="boxicons" name='down-arrow' type='solid'></box-icon>
+                </div>
+                <ul class="sidelist">
+                    <li><a href="">User Guide</a></li>
+                    <li><a href="">Developer</a></li>
+                    <li><a href="">Realese Notes</a></li>
+                </ul>
+                <div class="asideLinks">
+                    <h5><a href="">Personalization</a></h5>
+                    <box-icon class="boxicons" name='right-arrow' type='solid'></box-icon>
+                </div>
+            </aside>
+            <section>
+                <h1>Getting Started</h1>
+                <div class="sectionCategories">
+                    <div class="category1 catBox">
+                        <a class="category" href="">
+                            <box-icon class="catBoxitem" name='folder-open'></box-icon>
+                            <div>
+                                <h3>User Guides</h3>
+                                <p>We're a New category, with lots of useful information</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category2 catBox">
+                        <a class="category" href="">
+                            <box-icon class="catBoxitem" name='code-block'></box-icon>
+                            <div>
+                                <h3>Developer</h3>
+                                <p>We're a New category, with lots of useful information</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="category3 catBox">
+                        <a class="category" href="">
+                            <box-icon class="catBoxitem" name='megaphone' type='solid'></box-icon>
+                            <div>
+                                <h3>Realese Notes</h3>
+                                <p>We're a New category, with lots of useful information</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <h2>Still need help?</h2>
-        <form action="">
-            <label for="firstName">first Name</label>
-            <input type="text">
-            <label for="LastName">Last Name</label>
-            <input type="text">
-            <label for="Email">Email</label>
-            <input type="email">
-            <button>Get Started</button>
-        </form>
-        <div class="footerProducts">
-            <h4><a href="">
-                    Products
-                </a></h4>
-            <ul>
-                <li><a href="">Personalization</a></li>
-                <li><a href="">eCommerce</a></li>
-                <li><a href="">Order Management</a></li>
-                <li><a href="">Point of Sale</a></li>
-            </ul>
+        <div class="footercontainer">
+            <h3>Still need help?</h3>
+            <form action="">
+                <div class="formLook">
+                    <label for="firstName">First Name</label>
+                    <input class="inputFill" type="text" id="firstName" required>
+                </div>
+                <div class="formLook">
+                    <label for="LastName">Last Name</label>
+                    <input class="inputFill" type="text" id="LastName">
+                </div>
+                <div class="formLook">
+                    <label for="Email">Email</label>
+                    <input class="inputFill" type="email" id="Email" required>
+                </div>
+                <button>Get Started</button>
+            </form>
+            <div class="footerLinksContainer">
+                <div class="footerProducts footerLinks">
+                    <h4><a href="">
+                            Products
+                        </a></h4>
+                    <ul>
+                        <li><a href="">Personalization</a></li>
+                        <li><a href="">eCommerce</a></li>
+                        <li><a href="">Order Management</a></li>
+                        <li><a href="">Point of Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footerResources footerLinks">
+                    <h4><a href="">
+                            Resources
+                        </a></h4>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Developer Blog</a></li>
+                        <li><a href="">Developers</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footerWhoweare footerLinks">
+                    <h4><a href="">
+                            Who We Are
+                        </a></h4>
+                    <ul>
+                        <li><a href="">Who We Are</a></li>
+                        <li><a href="">Leadship</a></li>
+                        <li><a href="">News/Press</a></li>
+                        <li><a href="">Economic Awards</a></li>
+                    </ul>
+                </div>
+                <div class="employeeLogin footerLinks">
+                    <h4><a href="">Employee Login</a></h4>
+                </div>
+            </div>
         </div>
-        <div class="footerResources">
-            <h4></h4><a href="">
-                Resources
-            </a></h4>
-            <ul>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Developer Blog</a></li>
-                <li><a href="">Developers</a></li>
-                <li><a href="">Support</a></li>
-            </ul>
-        </div>
-        <div class="footerWhoweare">
-            <h4><a href="">
-                    Who We Are
-                </a></h4>
-            <ul>
-                <li><a href="">Who We Are</a></li>
-                <li><a href="">Leadship</a></li>
-                <li><a href="">News/Press</a></li>
-                <li><a href="">Economic Awards</a></li>
-            </ul>
-        </div>
-        <h4><a href="">Employee Login</a></h4>
-
     </footer>
     <script src="main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
