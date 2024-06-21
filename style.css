@@ -399,18 +399,20 @@ footer form button {
 
 /* media queries for small screen */
 
-@media only screen and (min-width:375px) and (max-width:767px) {
+@media only screen and (min-width:300px) and (max-width:767px) {
 
     .hideMobileMenu {
         visibility: visible;
     }
 
     header {
+        top: 10px;
         width: 100vw;
         background: none;
         background-color: rgb(51, 51, 51);
         height: auto;
         padding-top: 15px;
+        z-index: 99;
     }
 
     .hide {
@@ -436,6 +438,7 @@ footer form button {
 
     .searchBar {
         width: 100%;
+        margin-top: 20px;
     }
 
     nav ul {
@@ -460,6 +463,15 @@ footer form button {
         position: absolute;
         right: 30px;
         top: 25px;
+    }
+
+    .bxLeft {
+        filter: drop-shadow(1px 3px 5px rgb(20, 20, 20));
+        transform: scale(2.2);
+        position: absolute;
+        right: auto;
+        left: 30px;
+        top: 30px;
     }
 
     main {
