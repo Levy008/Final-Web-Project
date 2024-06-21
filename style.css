@@ -19,7 +19,7 @@ a {
 
 a:hover,
 .footerLinks a:hover {
-    color: rgb(87, 71, 42);
+    color: rgb(113, 87, 45);
 }
 
 header nav a {
@@ -137,7 +137,7 @@ header input {
     color: white;
 }
 
-/* header section */
+/* header section-end */
 
 /* main section */
 
@@ -179,19 +179,20 @@ h1 {
 aside {
     font-size: 15px;
     width: 20%;
-
-    .asideLinks {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-    }
 }
 
-.activeSelection {
-    color: rgb(139, 74, 0);
+.asideLinks {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 3px;
 }
 
-.sidelist {
+.asideLinks h5 {
+    margin-top: -5px;
+}
+
+.hideSidelist {
     display: none;
 }
 
@@ -245,7 +246,7 @@ section {
     gap: 10px;
 }
 
-/* main section */
+/* main section-end */
 
 /* footer section */
 
