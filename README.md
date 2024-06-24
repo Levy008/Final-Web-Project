@@ -23,6 +23,7 @@ When the user hovers over the image, the mouse pointer changes, indicating that 
 to another page. However, the same thing does not happen when the user hovers over the
 sentence below the image.
 Taking the statements above into consideration, choose the correct HTML fragment:
+```
 ● A) <h1><a href='https://helpjuice.com/'><img src='HELPJUICE.PNG'
 alt='Helpjuice'><br>Copyright © 2024, Helpjuice Inc.</a></h1>
 ● B) <h1><a href='https://helpjuice.com/'><img src='HELPJUICE.PNG'
@@ -33,11 +34,12 @@ alt='Helpjuice'><br></a>Copyright © 2024, Helpjuice Inc.</h1>
 href='https://helpjuice.com/'><br>Copyright © 2024, Helpjuice Inc.</a></h1>
 E) <h1><img src='HELPJUICE.PNG' alt='Helpjuice'><br><a
 href='https://helpjuice.com/'>Copyright © 2024, Helpjuice Inc.</a></h1>
-
+```
 
 
 ## 3. Question 03:
 Please consider the following code snippets:
+```
 CSS
 div.elem1 {
 width: 100%;
@@ -60,6 +62,7 @@ HTML
 <div class="title"></div>
 </div>
 </body>
+```
 To arrange the logo and title side by side, maintaining equal heights, which CSS property should
 replace “___”?
 Select the appropriate CSS property:
