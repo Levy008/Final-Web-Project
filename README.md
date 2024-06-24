@@ -12,6 +12,8 @@ Nice look/branding colors
 JavaScript for the navigation menu on the sidebar
 Well written code
 
+![IT_ _COMPUTING_FINAL_TEST](https://github.com/Levy008/Final-Web-Project/assets/155071111/52c7fa4d-3b40-49d6-827e-b081e35dea08)
+
 
 ## 2. Question 02:
 When you visit a page, you'll see the following:
